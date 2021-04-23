@@ -27,7 +27,7 @@ At the end of each episode, the rewards that each agent received (without discou
 This generates 20 potentially different scores. Then the average of these 20 scores is taken, which is the average score for each episode (where the average is over all 20 agents).   
 Finally the environment is considered solved when the **moving average over 100 episodes** of those average scores **is at least +30**.
 
-In this repository this second version of the environment has been used with a DDPG algorithm.
+In this repository, the second version of the environment has been used with a DDPG algorithm.
 
 ## Getting started
 
@@ -74,12 +74,18 @@ To experiment with how the Agent learns through distinct parameters, you can tun
 
 **2.** In the **ddpg_agent.py** file
 
-* \_batch_size: Minibatch size
-* \_buffer_size: Replay buffer size
-* \_gamma: Discount factor for expected rewards
-* \_lr_actor: Learning rate for the local actor's network
-* \_lr_critic: Learning rate for the local critic's network
-* \_tau: Multiplicative factor for the soft-update of the target networks's weights
-* \_noise_decay: Multiplicative factor for the noise-process rate decay
-* fc_layers for the actor network: Number and size of the actor network's layers
-* fc_layers for the critic network: Number and size of the critic network's layers    
+* \BUFFER_SIZE: Replay buffer size
+* \BATCH_SIZE: Minibatch size
+* \GAMMA: Discount factor for expected rewards
+* \TAU: Multiplicative factor for the soft update of target parameters
+* \LR_ACTOR: Learning rate for the local actor's network
+* \LR_CRITIC: Learning rate for the local critic's network
+* \WEIGHT_DECAY: L2 weight decay
+* \LEARN_EVERY and \LEARN_NUMBER: Update the networks 10 (LEARN_NUMBER) times after every 20 (LEARN_EVERY) timesteps
+* \EPSILON: Noise factor  
+* \EPSILON_DECAY: Multiplicative factor for the noise-process rate decay
+
+**3.** In the **model.py** file
+
+* \fc1_units and \fc2_units for the actor network: sizes of the actor network's layers
+* \fc1_units and \fc2_units for the critic network: sizes of the critic network's layers    
