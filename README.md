@@ -12,7 +12,7 @@ In this environment, a double-jointed arm can move to target locations. A reward
 
 The environment is based on [Unity ML-agents](https://github.com/Unity-Technologies/ml-agents). Unity ML-Agents is an open-source Unity plugin that enables games and simulations to serve as environments for training intelligent agents.
 
-**Note:** The Unity ML-Agent team frequently releases updated versions of their environment. We are using the v0.4 interface. The project environment provided by Udacity is similar to, but not identical to the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment on the Unity ML-Agents GitHub page.
+**Note:** The Unity ML-Agent team frequently releases updated versions of their environment. In this repository, the v0.4 interface has been used. The project environment provided by Udacity is similar to, but not identical to the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment on the Unity ML-Agents GitHub page.
 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
@@ -62,15 +62,14 @@ In this repository, the second version of the environment has been used with a D
 Run the `Continuous_Control.ipynb` notebook and follow the steps in the code.
 
 ### Adjusting the Hyperparameters
-To experiment with how the Agent learns through distinct parameters, you can tune these variables:  
+Here is the list of all the hyperparameters with which you can play and see how the learning change based on them.
 
 **1.** In the **Continuous_Control.ipynb** file  
 
-* \_target_score: How many points your agent must obtain to consider the environment solved
-* \_target_episodes: How many episodes to consider when calculating the moving average
-* n_episodes: Maximum number of training episodes
-* max_t: Maximum number of time steps per episode
-* random_seed: The number used to initialize the pseudorandom number generator
+* \n_episodes: Maximum number of training episodes
+* \maxlen: How many episodes to consider when calculating the moving average
+* \max_t: Maximum number of time steps per episode
+* \random_seed: The number used to initialize the pseudorandom number generator
 
 **2.** In the **ddpg_agent.py** file
 
