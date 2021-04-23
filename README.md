@@ -66,25 +66,25 @@ Here is the list of all the hyperparameters with which you can play and see how 
 
 **1.** In the **Continuous_Control.ipynb** file  
 
-* \n_episodes: Maximum number of training episodes
-* \maxlen: How many episodes to consider when calculating the moving average
-* \max_t: Maximum number of time steps per episode
-* \random_seed: The number used to initialize the pseudorandom number generator
+* n_episodes: Maximum number of training episodes
+* maxlen: How many episodes to consider when calculating the moving average
+* max_t: Maximum number of time steps per episode
+* random_seed: The number used to initialize the pseudorandom number generator
 
 **2.** In the **ddpg_agent.py** file
 
-* \BUFFER_SIZE: Replay buffer size
-* \BATCH_SIZE: Minibatch size
-* \GAMMA: Discount factor for expected rewards
-* \TAU: Multiplicative factor for the soft update of target parameters
-* \LR_ACTOR: Learning rate for the local actor's network
-* \LR_CRITIC: Learning rate for the local critic's network
-* \WEIGHT_DECAY: L2 weight decay
-* \LEARN_EVERY and \LEARN_NUMBER: Update the networks 10 (LEARN_NUMBER) times after every 20 (LEARN_EVERY) timesteps
-* \EPSILON: Noise factor  
-* \EPSILON_DECAY: Multiplicative factor for the noise-process rate decay
+* BUFFER_SIZE: Replay buffer size
+* BATCH_SIZE: Minibatch size
+* GAMMA: Discount factor for expected rewards
+* TAU: Multiplicative factor for the soft update of target parameters
+* LR_ACTOR: Learning rate for the local actor's network
+* LR_CRITIC: Learning rate for the local critic's network
+* WEIGHT_DECAY: L2 weight decay
+* LEARN_EVERY and \LEARN_NUMBER: Update the networks 10 (LEARN_NUMBER) times after every 20 (LEARN_EVERY) timesteps
+* EPSILON: Noise factor  
+* EPSILON_DECAY: Multiplicative factor for the noise-process rate decay
 
 **3.** In the **model.py** file
 
-* \fc1_units and \fc2_units for the actor network: sizes of the actor network's layers
-* \fc1_units and \fc2_units for the critic network: sizes of the critic network's layers    
+* fc1_units and fc2_units for the actor network: sizes of the actor network's layers
+* fc1_units and fc2_units for the critic network: sizes of the critic network's layers    
