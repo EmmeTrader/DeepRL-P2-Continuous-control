@@ -86,5 +86,5 @@ Here is the list of all the hyperparameters with which you can play and see how 
 
 **3.** In the **model.py** file
 
-* fc1_units and fc2_units for the actor network: sizes of the actor network's layers
-* fc1_units and fc2_units for the critic network: sizes of the critic network's layers    
+* fc1_units and fc2_units: sizes of the actor network's layers
+* fc1_units and fc2_units: sizes of the critic network's layers    
