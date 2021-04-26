@@ -28,9 +28,9 @@ Finally the environment is considered solved when the **moving average over 100 
 
 In this repository, the second version of the environment has been used with a DDPG algorithm.
 
-## Agent Implementation
+## Learning Algorithm
 
-### The algorithm: Deep Deterministic Policy Gradient (DDPG)
+### Agent implementation: Deep Deterministic Policy Gradient (DDPG)
 
 For this project I implemented an *off-policy method* called **Deep Deterministic Policy Gradient**, you can read more about it in this paper: [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971). 
 
@@ -49,11 +49,11 @@ These two networks are deployed alongside 2 more techniques:
 
 ![DDPG](ddpg.png)
 
-### Code implementation
+## Code implementation
 
 The code is organized in three files:
 
-## model.py 
+**model.py 
 
 This file contains the **Actor** and the **Critic** class and each of them are then used to implement a "Target" and a "Local" Neural Network for training/learning. 
 
@@ -75,7 +75,7 @@ Critic NN(
 )
 ```    
 
-## ddpg_agent.py 
+**ddpg_agent.py 
 
 Here you can find three classes: the (DDPG) Agent, the Noise and the Replay Buffer class.
 
@@ -94,7 +94,7 @@ The ReplayBuffer class consists of Fixed-size buffer to store experience tuples 
 The OUNoise class implements a Ornstein-Uhlenbeck process.
 This is inspired by the [DDPG paper](https://arxiv.org/abs/1509.02971), where the authors use an Ornstein-Uhlenbeck Process to add noise to the action output.
   
-## Continuous_Control.ipynb
+**Continuous_Control.ipynb
 
 This is the Jupyter notebook where I trained the agent. These are the steps taken in it:
   - Importing the necessary packages 
