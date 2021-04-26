@@ -47,7 +47,7 @@ These two networks are deployed alongside 2 more techniques:
 - **2 Target networks**, which add stability to training by learning from estimated targets. The Target networks are updated slowly, hence keeping the estimated targets stable.
 - **Experience Replay**, by storing list of tuples (state, action, reward, next_state), and instead of learning only from recent experience, the agent learns from sampling all of the experience accumulated so far.
 
-![DDPG](DDPG-algorithm.png)
+![DDPG](ddpg-algo.svg)
 
 ### Code implementation
 
