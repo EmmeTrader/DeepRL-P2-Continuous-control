@@ -125,9 +125,9 @@ EPSILON_DECAY = 0.999999  # Noise factor decay
 
 Here is the evolution of the score per episodes:
 
-![Training](learning_through_episodes.PNG)
+![Training](learning_through_episodes.png)
 
-![Score](reward_scores_graph.jpg)
+![Score](reward_scores_graph.png)
 
 After **88 episodes** the 100 period moving average (average over all 20 agents) reached a score of **30.05**, getting above the challenge's goal of at least +30.**
 
