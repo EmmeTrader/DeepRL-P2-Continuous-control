@@ -53,7 +53,7 @@ These two networks are deployed alongside 2 more techniques:
 
 The code is organized in three files:
 
-**model.py 
+**model.py** 
 
 This file contains the **Actor** and the **Critic** class and each of them are then used to implement a "Target" and a "Local" Neural Network for training/learning. 
 
@@ -75,7 +75,7 @@ Critic NN(
 )
 ```    
 
-**ddpg_agent.py 
+**ddpg_agent.py** 
 
 Here you can find three classes: the (DDPG) Agent, the Noise and the Replay Buffer class.
 
@@ -94,7 +94,7 @@ The ReplayBuffer class consists of Fixed-size buffer to store experience tuples 
 The OUNoise class implements a Ornstein-Uhlenbeck process.
 This is inspired by the [DDPG paper](https://arxiv.org/abs/1509.02971), where the authors use an Ornstein-Uhlenbeck Process to add noise to the action output.
   
-**Continuous_Control.ipynb
+**Continuous_Control.ipynb**
 
 This is the Jupyter notebook where I trained the agent. These are the steps taken in it:
   - Importing the necessary packages 
